@@ -1,4 +1,6 @@
+import React from "react";
 import { useState, useEffect } from "react";
+import { TailSpin } from "react-loader-spinner";
 
 function Pokemon({ name, url }) {
   const [data, setData] = useState(null);
@@ -16,6 +18,11 @@ function Pokemon({ name, url }) {
           <div className="card-image">
             <img src={data.sprites.front_default} />
             <span className="card-title">{name}</span>
+            {/* {???.map((item, index) => (
+              <div key={index}>
+                <button onClick={()=> {??? }}>Sraka</button>
+              </div>
+            ))} */}
           </div>
           <div className="card-content">
             {data.abilities.map((n, index) => (
@@ -24,7 +31,9 @@ function Pokemon({ name, url }) {
           </div>
         </div>
       ) : (
-        <div>loading...</div>
+        <div>
+          <TailSpin type="Puff" color="purple" height={100} width={100} />
+        </div>
       )}
     </div>
   );

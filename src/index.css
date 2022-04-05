@@ -39,8 +39,10 @@ body {
 
 .card .card-image .card-title {
   bottom: -25px;
-  color: black ;
+  color: rgb(57, 57, 57) ;
   font-weight: 900;
+  text-transform: uppercase;
+  text-decoration:overline;
 }
 
 .card-content {
@@ -49,6 +51,8 @@ body {
   min-height: 93px;
   padding:10px 0 0 0 !important;
   background-color: rgb(204, 174, 231);
+  font-size: 15px;
+  font-weight:500 ;
 }
 
 .button_container {
