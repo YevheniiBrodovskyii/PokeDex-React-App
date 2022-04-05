@@ -12,7 +12,7 @@ function Pokemon({ name, url }) {
   return (
     <div>
       {data ? (
-        <div className="card">
+        <div className="card animate__animated animate__bounceInUp">
           <div className="card-image">
             <img src={data.sprites.front_default} />
             <span className="card-title">{name}</span>

@@ -1,9 +1,9 @@
 import React from "react";
 
-function LoadMore(next) {
+function LoadMore({ next }) {
   return (
     <div className="button_container">
-      <a className="waves-effect waves-light btn-large" next={next}>
+      <a type="button" onClick={next} className="more_btn" id="more">
         More...
       </a>
     </div>

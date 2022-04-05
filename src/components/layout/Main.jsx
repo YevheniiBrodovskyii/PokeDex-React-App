@@ -16,7 +16,7 @@ function Main() {
     )
       .then((responce) => responce.json())
       .then((data) => {
-        data.results && setPokemons(data.results);
+        data.results && setPokemons((p) => [...p, ...data.results]);
         setLoading(false);
       });
   }
