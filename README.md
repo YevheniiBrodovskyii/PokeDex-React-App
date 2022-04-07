@@ -1,5 +1,7 @@
 # PokeDex React App
 
+## [GitHub Pages Link](https://yevheniibrodovskyii.github.io/PokeDex-React-App/)
+
 This project was made for a recruitment quest
 
 ### The task
