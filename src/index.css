@@ -8,6 +8,7 @@ body {
 
 
 .content {
+  margin-top: 50px;
   min-height: calc(100vh - 70px - 64px);
   padding: 1.5rem 0;
 }
@@ -25,12 +26,18 @@ body {
 .pokemons {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2.5rem;
+  gap: 3.5rem;
 }
 
 .card {
   min-height: 450px;
   transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.card_more {
+  border:20px solid rgb(204, 174, 231);
+  min-height: inherit;
 }
 
 .card:hover {
@@ -38,11 +45,48 @@ body {
 }
 
 .card .card-image .card-title {
-  bottom: -25px;
+  bottom: -35px;
   color: rgb(57, 57, 57) ;
   font-weight: 900;
   text-transform: uppercase;
   text-decoration:overline;
+}
+
+.card_click-container {
+  margin:  0 auto;
+  width:133px;
+}
+
+.card_click {
+  position: absolute;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration:underline;
+  color: rgba(0, 0, 0, 0.299);
+}
+
+.card .card_more-title {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(57, 57, 57) ;
+  font-weight: 900;
+  background-color: rgba(204, 174, 231, 0.475);
+  padding: 25px 0 25px 0 ;
+}
+
+.card .card_more-title p {
+  margin: 0;
+}
+
+.card .card-title {
+  padding: 20px 0 25px 0;
+  text-transform: uppercase;
+  text-decoration:overline;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(57, 57, 57) ;
+  font-weight: 900;
+  
 }
 
 .card-content {
@@ -86,4 +130,45 @@ body {
 
 .more_btn:active {
   top: 3px;
+}
+
+.back_btn {
+  width: 100%;
+  margin:  0 auto;
+  padding:35px 0 45px 0;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.588);
+  text-decoration:underline;
+  
+}
+
+.back_btn:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+
+@media (max-width:1664px) {
+  .card .card_more-title {
+    font-size: 20px;
+  }
 }
