@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PokeDex-React-App/static/css/main.2dcd41e7.css",
+    "main.js": "/PokeDex-React-App/static/js/main.1a3188f5.js",
+    "index.html": "/PokeDex-React-App/index.html",
+    "main.2dcd41e7.css.map": "/PokeDex-React-App/static/css/main.2dcd41e7.css.map",
+    "main.1a3188f5.js.map": "/PokeDex-React-App/static/js/main.1a3188f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2dcd41e7.css",
+    "static/js/main.1a3188f5.js"
+  ]
+}
